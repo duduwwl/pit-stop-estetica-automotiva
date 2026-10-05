@@ -1,0 +1,5 @@
+work/
+outputs/
+dist/
+.sites-runtime/
+node_modules/
