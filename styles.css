@@ -19,3 +19,9 @@
 @media(max-width:900px){.instagram-panel{grid-template-columns:1fr;gap:38px}.instagram-details{border-left:0;border-top:1px solid var(--line);padding:26px 0 0}}
 @media(max-width:560px){.instagram-section{padding-top:68px;padding-bottom:68px}.instagram-profile{gap:15px}.instagram-logo{width:58px;height:58px;flex-basis:58px}.instagram-profile h2{font-size:24px}.instagram-profile p{font-size:12px}.instagram-stat{margin-right:24px}}
 .section[id]{scroll-margin-top:0}
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video{max-width:100%}
+.container,.header-inner,.method-grid,.faq-grid,.instagram-panel,.booking-layout{min-width:0}
+.method-copy,.method-list,.faq-list,.booking-card{min-width:0;max-width:100%}
+.booking-card input,.booking-card select,.booking-card textarea{max-width:100%;min-width:0}
+@media(max-width:1100px) and (min-width:901px){.container{width:calc(100% - 48px)}.header-inner{gap:20px}.desktop-nav{gap:17px;font-size:11px}.header-cta{display:none}.split-heading{gap:32px}.split-heading h2{font-size:54px}.service-card{padding-inline:17px}.service-card h3{font-size:22px}.method-grid{gap:clamp(36px,5vw,68px)}.method-copy h2{font-size:clamp(47px,5vw,56px)}.faq-grid{gap:clamp(36px,5vw,70px)}}
