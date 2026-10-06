@@ -36,3 +36,14 @@ img,svg,video{max-width:100%}
 @media(max-width:900px){.hero{min-height:0;display:flex;flex-direction:column;align-items:stretch;padding-top:70px}.hero-image{position:relative;order:2;left:auto;right:auto;inset:auto;width:100%;height:360px;background-position:center}.hero-overlay{display:none}.hero-content{order:1;max-width:none;width:100%;padding:62px max(20px,calc((100% - var(--max))/2)) 58px}.hero h1{max-width:560px}.hero-note{margin-top:55px}.hero-scroll{display:none}}
 .method-section,.contact-cta{padding:82px 0}
 @media(max-width:560px){.hero{padding-top:70px}.hero-image{height:290px}.hero-content{padding:45px 16px 48px}.hero h1{font-size:60px}.hero-note{margin-top:48px}}
+
+/* Hero full-bleed: the car now fills the entire opening section while the
+   directional veil preserves contrast and keeps the message readable. */
+.hero{min-height:770px;display:flex;align-items:center;padding-top:0}
+.hero-image{position:absolute;inset:0;left:0;right:0;width:100%;height:100%;background-position:62% center;background-size:cover}
+.hero-overlay{display:block;position:absolute;inset:0;left:0;right:0;width:100%;background:linear-gradient(90deg,rgba(11,13,14,.98) 0%,rgba(11,13,14,.92) 28%,rgba(11,13,14,.68) 48%,rgba(11,13,14,.24) 72%,rgba(11,13,14,.08) 100%),linear-gradient(0deg,rgba(11,13,14,.78),transparent 56%,rgba(11,13,14,.28))}
+.hero-content{order:initial;width:min(calc(100% - 64px),var(--max));max-width:var(--max);padding-right:52%;position:relative;z-index:1}
+.hero h1{max-width:520px}
+@media(max-width:1100px) and (min-width:901px){.hero-content{width:calc(100% - 48px);padding-right:50%}}
+@media(max-width:900px){.hero{min-height:680px;display:flex;align-items:center;padding-top:70px}.hero-image{position:absolute;inset:0;width:100%;height:100%;order:initial;background-position:60% center}.hero-overlay{display:block;width:100%;background:linear-gradient(0deg,rgba(11,13,14,.96) 0%,rgba(11,13,14,.9) 48%,rgba(11,13,14,.35) 100%),linear-gradient(90deg,rgba(11,13,14,.86),rgba(11,13,14,.2))}.hero-content{order:initial;width:calc(100% - 40px);max-width:var(--max);padding:45px 0 48px}.hero h1{max-width:560px}.hero-scroll{display:none}}
+@media(max-width:560px){.hero{min-height:680px;padding-top:70px}.hero-content{width:calc(100% - 32px);padding:42px 0 46px}.hero-image{background-position:58% center}.hero h1{font-size:60px}}
